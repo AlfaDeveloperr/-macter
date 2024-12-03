@@ -1,0 +1,188 @@
+* {
+    font-family: 'popins', sans-serif !important;
+}
+
+*::selection {
+    color: #ffff !important;
+    background-color: #ff8c00 !important;
+}
+
+.wrapper {
+    background: #ececec !important;
+    padding: 0 20px 0 20px !important;
+}
+
+.main {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+}
+
+.row {
+    width: 900px !important;
+    height: 550px !important;
+    border-radius: 10px !important;
+    background: #ffff !important;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 2) !important;
+}
+
+.side-image {
+    background-image: url("https://i.pinimg.com/originals/bc/d7/58/bcd758bf2844620a3f5dac1ff3209add.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    border-radius: 10px 0 0 10px !important;
+}
+
+img {
+    width: 35px !important;
+    position: absolute !important;
+    top: 30px !important;
+    left: 30px !important;
+}
+
+.text {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.text p {
+    color: #ffff !important;
+    font-size: 18px !important;
+}
+
+i {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+}
+
+.right {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+}
+
+/*input styles CSS*/
+.input-box {
+    width: 330px !important;
+    box-sizing: border-box !important;
+}
+
+.input-box header {
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin-bottom: 45px !important;
+}
+
+.input-field {
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    padding: 0 10px 0 10px !important;
+}
+
+.input {
+    height: 45px !important;
+    width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+    outline: none !important;
+    margin-bottom: 20px !important;
+    color: #40414a !important;
+}
+
+.input-box .input-field label {
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    pointer-events: none !important;
+    transition: .5s !important;
+}
+
+.input-field .input:focus~label {
+    top: -10px !important;
+    font-size: 13px !important;
+}
+
+.input-field .input:valid~label {
+    top: -10px !important;
+    font-size: 13px !important;
+    color: #5d5076 !important;
+}
+
+.input-field .input:focus,
+.input-field .input:valid {
+    border-bottom: 1px solid #ff8c00 !important;
+}
+
+input:focus {
+    color: #cd0000 !important;
+}
+
+.submit {
+    border: none !important;
+    outline: none !important;
+    height: 45px !important;
+    background: #ececec !important;
+    border-radius: 5px !important;
+    transition: .4s !important;
+}
+
+.submit:hover {
+    background: #ff8c00 !important;
+    color: #ffff !important;
+}
+
+.signin {
+    text-align: center !important;
+    font-size: small !important;
+    margin-top: 25px !important;
+}
+
+span a {
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    transition: .5s !important;
+}
+
+span a:hover {
+    text-decoration: underline !important;
+    color: #cd0000 !important;
+}
+
+@media only screen and (max-width:768px) {
+    .side-image {
+        border-radius: 10px 10px 0 0 !important;
+        display: none;
+    }
+
+    img {
+        width: 35px !important;
+        position: absolute !important;
+        top: 20px !important;
+        left: 47px !important;
+    }
+
+    .text {
+        position: absolute !important;
+        top: 70% !important;
+        text-align: center !important;
+    }
+
+    .text p,
+    i {
+        font-size: 17px !important;
+    }
+
+    .row {
+        max-width: 420px !important;
+        width: 100% !important;
+    }
+}
